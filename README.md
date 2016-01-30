@@ -6,6 +6,7 @@ Simple text generator based on a template
 Пример кода для использования:
 
 <?php
+
   $tmp = new Stgbot();
   
   $tmp->loadFromFile( $path ); // $path - путь к файлу
@@ -17,4 +18,5 @@ Simple text generator based on a template
   $tmp->assing(array("то, что нужно заменить" => "то, на что нужно заменить"));
   
   $tmp->process()->display();
+  
 ?>
