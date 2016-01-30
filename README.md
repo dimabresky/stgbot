@@ -5,10 +5,16 @@ Simple text generator based on a template
 
 Пример кода для использования:
 
-$tmp = new Stgbot();
-
-$tmp->loadFromFile( путь к файлу ) или $tmp->loadAsString(  строка  );
-
-$tmp->assing(array("то, что нужно заменить" => "то, на что нужно заменить"));
-
-$tmp->process()->display();
+<?php
+  $tmp = new Stgbot();
+  
+  $tmp->loadFromFile( $path ); // $path - путь к файлу
+  
+  /* или */
+ 
+  $tmp->loadAsString( $str_template  ); // $str_template - шаблон в виде строки
+  
+  $tmp->assing(array("то, что нужно заменить" => "то, на что нужно заменить"));
+  
+  $tmp->process()->display();
+?>
