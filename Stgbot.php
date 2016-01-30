@@ -26,7 +26,7 @@ class Stgbot
 	 * Данный метод принимает путь к файлу шаблона
 	 * Если файл существует, то загружает его, иначе генерирует исключение
 	 *
-     * $path: string
+     	 * $path: string
 	 */
 	public function loadFromFile($path)
 	{
@@ -40,7 +40,7 @@ class Stgbot
 	/**
 	 * Данный метод принимает исходный шаблон в виде строки
 	 *
-	 * str_temp_body: string
+	 * $original_tmp_body: string
 	 */
 	public function loadAsString($original_tmp_body)
 	{
